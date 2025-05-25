@@ -1,0 +1,68 @@
+.products {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3%;
+  min-height: calc(100vh - [header_height] - [footer_height] - [padding]);
+  box-sizing: border-box;
+}
+img{
+    width: 200px;
+}
+mat-card-content p{
+    overflow: hidden;
+}
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines */
+  line-clamp: 2; /* Standard property for compatibility */
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+  max-height: 2.8em; /* 1.4 line-height * 2 lines */
+}
+
+.description.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  max-height: none;
+}
+
+.read-more {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 2px;
+ text-decoration: none;
+}
+mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white;
+}
+
+mat-card-image {
+  width: 100%;
+  height: 200px;         /* Fixed height */
+  object-fit: cover;     /* Crops to fit nicely */
+  border-radius: 4px;
+}
+
+mat-card-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-card-actions button {
+  background-color: #f06595;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

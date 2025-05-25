@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #070707;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 0px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 1rem;
+}
+button{
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    
+}
+mat-icon{
+    color: #f06595;
+
+}
+.logostyle {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-weight: 600;
+    font-size: 1.5rem;
+   background: linear-gradient(90deg, #ff6b6b, #f06595);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For better cross-browser support */
+  background-clip: text;
+  color: transparent;
+  animation: glowPulse 2s ease-in-out;
+}
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 0px #f06595;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 10px #e5a0b8, 0 0 20px #f09f9f;
+    transform: scale(1.05);
+  }
+  100% {
+    text-shadow: 0 0 0px #f06595;
+    transform: scale(1);
+  }
+}

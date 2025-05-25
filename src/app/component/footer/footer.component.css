@@ -1,0 +1,27 @@
+footer{
+    background-color: #f06595;
+    margin-top: 1%;
+}
+.footer-content{
+    background-color: rgba(0, 0, 0, 0.247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 15px;
+}
+li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.footer-content p{
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1.2rem;
+    margin: 0;
+}

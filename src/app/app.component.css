@@ -1,0 +1,16 @@
+/* Ensure proper box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Main content should push footer down */
+.main-content {
+  flex: 1 0 auto; /* This makes it grow but not shrink */
+  padding: 16px;
+  width: 100%;
+}
+
+/* Footer should stay at bottom */
+app-footer {
+  flex-shrink: 0;
+}
