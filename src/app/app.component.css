@@ -1,16 +1,19 @@
-/* Ensure proper box model */
-* {
-  box-sizing: border-box;
-}
 
-/* Main content should push footer down */
+
+
+/* Main App Layout */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .main-content {
-  flex: 1 0 auto; /* This makes it grow but not shrink */
-  padding: 16px;
-  width: 100%;
+  flex: 1;
+  /* padding: 16px; */
+  position: relative;
+  overflow:visible; /* Prevent main content from scrolling */
 }
-
-/* Footer should stay at bottom */
 app-footer {
   flex-shrink: 0;
+  margin-top: auto;
 }
